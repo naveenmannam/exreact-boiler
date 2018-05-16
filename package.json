@@ -1,0 +1,31 @@
+{
+  "name": "mycalci",
+  "version": "0.1.0",
+  "description": "Calculator with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "server":"nodemon index.js",
+    "dev":"concurrently \"npm run server\" \"npm start --prefix client\"",
+    "prod":"concurrently \"npm start\" \"npm start --prefix client\""
+  },
+  "author": "Naveen Mannam",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "joi": "^13.3.0",
+    "mongoose": "^5.1.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1"
+  }
+}
